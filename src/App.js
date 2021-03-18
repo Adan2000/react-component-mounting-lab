@@ -11,7 +11,11 @@ class App extends Component {
 
 
   //Your code here:
-
+  componentDidMount() {
+    this.handleAddTimer()
+  }
+  //here we invoke the handleAddTimer method in 
+  //the componentDidMount. used for DOM manip or fetching.
 
 
 

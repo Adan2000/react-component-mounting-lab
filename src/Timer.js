@@ -7,6 +7,20 @@ class Timer extends Component {
   };
 
   // add your code here
+  componentDidMount() {
+    this.interval = setInterval(this.clockTick, 1000)
+  }
+  //here we wrote a compenentDidMount and assigned 
+  //it to a variable within our class.
+  //we then passed clocktick as a callbackFunction
+  //and set it to update every 1000 of a seconds
+
+  componentWillUnmount() {
+    clearInterval(this.interval)
+  }
+  //we then wrote a componentWillUnmount in order 
+  //to remove the component from the DOM 
+  //and clean up any ongoing processess.
 
   render() {
     const { time, color } = this.state;
