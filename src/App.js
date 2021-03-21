@@ -14,8 +14,15 @@ class App extends Component {
   componentDidMount() {
     this.handleAddTimer()
   }
-  //here we invoke the handleAddTimer method in 
-  //the componentDidMount. used for DOM manip or fetching.
+  //since we are starting a timer/fetching data we Have 
+  //to use the componentDidMount, this method is used for 
+  //taking INITIAL actions within the app.
+  //These action may include like.. 
+  //getting a different API data, setting cursor focus, or creating timers/intervals
+
+  //so in this method we Invoke the existing method 
+  //that is called handleAddTimer()
+
 
 
 
